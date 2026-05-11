@@ -1,5 +1,19 @@
+<!--
+Sync Impact Report
+Version change: [OLD_VERSION] -> [NEW_VERSION]
+Modified principles:
+- [OLD_PRINCIPLE] -> [NEW_PRINCIPLE]
+Added sections:
+- [SECTION NAME]
+Removed sections:
+- [SECTION NAME]
+Templates requiring updates:
+- [ ] [path]
+Follow-up TODOs:
+- [TODO ITEM]
+-->
+
 # [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
@@ -41,10 +55,10 @@
 <!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+<!-- Constitution supersedes conflicting repository guidance; amendments must update dependent templates and docs in the same change -->
 
 [GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+<!-- Include amendment procedure, compliance review expectations, semantic versioning policy, and aligned guidance locations -->
 
 **Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
 <!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->

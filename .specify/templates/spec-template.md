@@ -89,6 +89,8 @@
 - **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
 - **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
 - **FR-005**: System MUST [behavior, e.g., "log all security events"]
+- **FR-006**: System MUST define the authentication, authorization, or ownership rules for each user action that exposes or mutates protected data.
+- **FR-007**: System MUST state whether the feature has offline-only constraints and which interfaces are required for future cloud migration.
 
 *Example of marking unclear requirements:*
 
@@ -113,3 +115,9 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+## Compliance Notes *(mandatory)*
+
+- **Training Impact**: [Explain how the feature stays understandable and appropriate for a training codebase]
+- **Security Impact**: [List the security boundaries this feature touches and the intended enforcement points]
+- **Verification Plan**: [List the expected automated and manual checks that will prove each user story works independently]

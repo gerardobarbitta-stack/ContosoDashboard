@@ -3,7 +3,7 @@
 **Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
 
-**Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
+**Note**: This template is filled in by the `/speckit.plan` command.
 
 ## Summary
 
@@ -31,7 +31,11 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **Training-first scope**: Explain how the feature preserves training clarity and avoids unnecessary production-only complexity.
+- **Offline-first design**: Confirm the feature works without mandatory cloud dependencies and identify any interface abstractions needed for future cloud migration.
+- **Security boundary**: Name the authentication, authorization, data ownership, or file access rules affected and how the design enforces them.
+- **Verification**: Define the narrowest executable checks and any required manual verification steps for each changed story.
+- **Complexity justification**: Document any new abstraction, infrastructure dependency, or workflow complexity that exceeds existing repository patterns.
 
 ## Project Structure
 
@@ -48,47 +52,18 @@ specs/[###-feature]/
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```text
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
-src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+ContosoDashboard/
+├── Data/
+├── Models/
+├── Pages/
+├── Services/
+├── Shared/
+└── wwwroot/
 
-tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+StakeholderDocs/
+└── [feature-specific reference material]
 ```
 
 **Structure Decision**: [Document the selected structure and reference the real
